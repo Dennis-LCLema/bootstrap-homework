@@ -1,106 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/stlye.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Chettan|Libre+Baskerville|Margarine" rel="stylesheet">
+
+  <title>Document</title>
 </head>
+
 <body>
+    <div class="wrapper"></div>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="assets/Images/my-resume.pdf">Resume</a></li>
+      </ul>
+    </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Dennis Campoverde-Lema</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link dropdown-toggle" href="indexb.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Home
-                      </a>
-                      
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
+  
+  <div id="apps"></div>
 
-        <div class="card-columns">
-                <div class="card">
-                  <img src="Photos/Ball_Through_Hoop_Web.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">BasketBall is life!</h5>
-                    <p class="card-text">I love to play basketball with my friends! its a hobbie that I am somewhat good.  Its also fun to troll my friends and tell them they can't shoot for nothing!</p>
-                  </div>
-                </div>
-                <div class="card p-3">
-                  <blockquote class="blockquote mb-0 card-body">
-                    <p> I love poems.  i used to right a lot of peoms in highschool.  I have more poetry books than i have shoes!</p>
-                    <footer class="blockquote-footer">
-                      <small class="text-muted">
-                           A very enthusiastic poet reader <cite title="Source Title">Source Title</cite>
-                      </small>
-                    </footer>
-                  </blockquote>
-                </div>
-                <div class="card">
-                  <img src="Photos/UNADJUSTEDNONRAW_thumb_54.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Photagraphy</h5>
-                    <p class="card-text">I love to take pictures and edit it to make them look fantastic!!</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                
-                <div class="card text-center">
-                  <div class="card-body">
-                    <h5 class="card-title">Cooking</h5>
-                    <p class="card-text">I love to cook! once a week, I look up at the most random recepie and try to make it.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="Photos/UNADJUSTEDNONRAW_thumb_1f.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">ANIME</h5>
-                    <p class="card-text">I love to watch anime! thats all</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="appDiv">
+          <a href="https://dennis-lclema.github.io/Train-Schedule/"><img src="assets/Images/Train.png" alt=""></a>
+          <h1>Train Schedule</h1>
+          <p>This project the user will input a time and train company and it will save the information on the webpages.  
+            I used HTML, CSS, Java Script, and jQuery to set it up.  I used HTML and CSS to set up input searches and background design.  
+            I used Java Script and jQuery to display responses and to let the user know if they put the right information in.  
+            I used firebase to save the user input and to display the information the user input.  
+          </p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="appDiv">
 
-              <div class="fixed-bottom"><div class="container">
-                    <div class="row">
-                      <div class="col-sm">
-                        
-                      </div>
-                      <div class="col-sm">
-                        @CopyRight
-                      </div>
-                      <div class="col-sm">
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
+          <a href="https://dennis-lclema.github.io/GifTastic/"><img src="assets/Images/gif.png" alt=""></a>
+          <h1>GifTastic</h1>
+          <p> This application allows the user to input a movie title and a Gif from the movie will pop. 
+            The user can also pause and play Gif just by clicking on it.  I used HTML and CSS to set up the design of the application.  
+            I used JAVA and jQuery for most of the responses and function.  I used the gif API from https://giphy.com/.  
+            I used a jQuery function AJAX to pull in the information necessary for the application to work.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="appDiv">
+          <a href="https://dennis-lclema.github.io/GroupProject/"><img src="assets/Images/app.png" alt=""></a>
+          <h1>Events APP</h1>
+          <p>Eventide is an app that allows user to find event near their location and to find restaurants near the event. 
+            How it works: Input your city and date, and events will populate below. Click on the event link to buy tickets and get additional information. 
+            Click the Nearby Restaurants button to show restaurants close by. Click on the link to check out the menu or book a reservation.  
+            Using HTML and CSS to design the back ground and search boxes.  Used two API’s seekgeek, and Zamato. I used jQuery function AJAX to pull in information from the API.  
+            Also used firebase to save user review on the app.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="appDiv">
+          <a href="https://dennis-lclema.github.io/Trivia-Game/"><img src="assets/Images/Quiz.png" alt=""></a>
+          <h1>Trivia-Game</h1>
+          <p>This application tests timer on web application.  The application tells you a set of question and you have to answer within 15 seconds.  
+            I used HTML and CSS to design the application.  Java script was used mostly for question and the timer.  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="appDiv">
+          <a href="https://dennis-lclema.github.io/Psychic-Game/"><img src="assets/Images/quess.png" alt=""></a>
+          <h1>Psychic-Game</h1>
+          <p>This is one of my earlier game projects using JAVA to randomize a letter and user has to quests which letter it is using their keyboards.  
+            I used HTML and CSS to design this application.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="appDiv">
+          <a href="https://dennis-lclema.github.io/unit-4-game/"><img src="assets/Images/reapers.png" alt=""></a>
+          <h1>Game</h1>
+          <p>This project is a game using Java script.  User are given four buttons (characters) and the enemy number (total; number needed to defeat enemy).  
+            User will have to click on the buttons and are given a random number amount between 12-1 and each button will add on.  
+            The user need to match the enemy number without going over.  
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div id="footer">
+      <div id="footer-inner">
+        <p>© Copyright <a href="//www.html.am">HTML.am</a> | <a href="//www.html.am/privacy_policy.cfm">Privacy Policy</a></p>
+        <div class="clr"></div>
+        <div id="mobile-toggle">
+          <b>Desktop</b> | <a href="/html-codes/character-codes/html-copyright-code.cfm?newView=Mobile" rel="nofollow">Mobile Site</a>
+        </div>	
+      </div>
+    </div>
 </body>
+
+
 </html>
