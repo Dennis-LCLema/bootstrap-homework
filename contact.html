@@ -1,151 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/stlye.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Chettan|Libre+Baskerville|Margarine" rel="stylesheet">
+
 
 </head>
+
 <body>
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Dennis Campoverde-Lema</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link dropdown-toggle" href="indexb.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Home
-                      </a>
-                      
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
 
-              <form class="needs-validation" novalidate>
-                    <div class="form-row">
-                      <div class="col-md-4 mb-3">
-                        <label for="validationCustom01">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <label for="validationCustom02">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <label for="validationCustomUsername">Username</label>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                          </div>
-                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-                          <div class="invalid-feedback">
-                            Please choose a username.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationCustom03">City</label>
-                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid city.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationCustom04">State</label>
-                        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid state.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationCustom05">Zip</label>
-                        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid zip.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                          Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                          You must agree before submitting.
-                        </div>
-                      </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                  </form>
-                  
-                  <script>
-                  // Example starter JavaScript for disabling form submissions if there are invalid fields
-                  (function() {
-                    'use strict';
-                    window.addEventListener('load', function() {
-                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                      var forms = document.getElementsByClassName('needs-validation');
-                      // Loop over them and prevent submission
-                      var validation = Array.prototype.filter.call(forms, function(form) {
-                        form.addEventListener('submit', function(event) {
-                          if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                          }
-                          form.classList.add('was-validated');
-                        }, false);
-                      });
-                    }, false);
-                  })();
-                  </script>
+  <div class="wrapper"></div>
+  <nav>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/Images/my-resume.pdf">Resume</a></li>
+    </ul>
+  </nav>
+  <br>
 
-<div class="fixed-bottom"><div class="container">
-        <div class="row">
-          <div class="col-sm">
-            
-          </div>
-          <div class="col-sm">
-            @CopyRight
-          </div>
-          <div class="col-sm">
-            
-          </div>
+  <div class="container-contact100">
+    <div id="center">
+
+      <div class="wrap-contact100">
+        <div class="contact100-form-title" style="background-image: url(assets/css/tileable_wood_texture_@2X.png);">
+          <span class="contact100-form-title-1">
+            Contact Us
+          </span>
+
+          <span class="contact100-form-title-2">
+            Feel free to drop us a line below!
+          </span>
         </div>
+
+        <form class="contact100-form validate-form">
+          <div class="wrap-input100 validate-input" data-validate="Name is required">
+            <span class="label-input100">Full Name:</span>
+            <input class="input100" type="text" name="name" placeholder="Enter full name">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+            <span class="label-input100">Email:</span>
+            <input class="input100" type="text" name="email" placeholder="Enter email addess">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Phone is required">
+            <span class="label-input100">Phone:</span>
+            <input class="input100" type="text" name="phone" placeholder="Enter phone number">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Message is required">
+            <span class="label-input100">Message:</span>
+            <textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="container-contact100-form-btn">
+            <button class="contact100-form-btn">
+              <span>
+                Submit
+                <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
 
+    (function ($) {
+      "use strict";
+
+      /*==================================================================
+      [ Focus Contact2 ]*/
+      $('.input100').each(function () {
+        $(this).on('blur', function () {
+          if ($(this).val().trim() != "") {
+            $(this).addClass('has-val');
+          }
+          else {
+            $(this).removeClass('has-val');
+          }
+        })
+      })
+
+      /*==================================================================
+      [ Validate ]*/
+      var input = $('.validate-input .input100');
+
+      $('.validate-form').on('submit', function () {
+        var check = true;
+
+        for (var i = 0; i < input.length; i++) {
+          if (validate(input[i]) == false) {
+            showValidate(input[i]);
+            check = false;
+          }
+        }
+
+        return check;
+      });
+
+
+      $('.validate-form .input100').each(function () {
+        $(this).focus(function () {
+          hideValidate(this);
+        });
+      });
+
+      function validate(input) {
+        if ($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+          if ($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+            return false;
+          }
+        }
+        else {
+          if ($(input).val().trim() == '') {
+            return false;
+          }
+        }
+      }
+
+      function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+      }
+
+      function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+      }
+
+
+    })(jQuery);
+
+  </script>
+
+<br>
+
+  <div id="footer">
+    <div id="footer-inner">
+      <p>© Copyright <a href="//www.html.am">HTML.am</a> | <a href="//www.html.am/privacy_policy.cfm">Privacy Policy</a>
+      </p>
+      <div class="clr"></div>
+      <div id="mobile-toggle">
+        <b>Desktop</b> | <a href="/html-codes/character-codes/html-copyright-code.cfm?newView=Mobile"
+          rel="nofollow">Mobile Site</a>
+      </div>
+    </div>
+  </div>
 
 
 </body>
+
 </html>
